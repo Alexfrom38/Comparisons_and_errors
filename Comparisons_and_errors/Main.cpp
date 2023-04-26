@@ -137,5 +137,9 @@ int main()
 		if (array_of_REL[i] > max) max = array_of_REL[i];
 	}
 	Insert_In_File_With_Const(array_of_REL, size_of_CF, "outputREL.txt", max);
+	delete[] array_from_GS ;
+	delete[] array_from_CF ;
+	delete[] array_of_ABS ;
+	delete[] array_of_REL;
 	return 0;
 }
